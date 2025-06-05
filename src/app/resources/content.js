@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Full Stack Developer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/profile.jpg",
   email: "agusraditya13@gmail.com",
   location: "Asia/Kuala_Lumpur", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Japanese「日本語」", "Bahasa Indonesia"], // optional: Leave the array empty if you don't want to display languages
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Raditya, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      I'm Raditya, a full stack developer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -91,7 +91,7 @@ const about = {
     description: (
       <>
         Raditya is a Bali-based full stack developer with a passion transforming complex technical 
-        requirements into robust and elegant full-stack solutions. Her work spans front-end user 
+        requirements into robust and elegant full-stack solutions. His work spans front-end user 
         experiences, back-end architecture, database design, and seamless API integrations.
       </>
     ),
@@ -163,6 +163,44 @@ const about = {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
+      {
+        title: "Python",
+        description: <>Able to create application and analyse data using python.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-02.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Java",
+        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-02.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
       {
         title: "Figma",
         description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
