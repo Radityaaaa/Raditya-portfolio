@@ -235,6 +235,78 @@ const about = {
       },
     ],
   },
+  tools: {
+    display: true, // set to false to hide this section
+    title: "Tools",
+    description: "Some tools that I've used...",
+    items: [
+      {
+        name: "HTML5",
+        icon: "/images/tools/html5.svg", // You'll need to add these icons to your public folder
+        background: "neutral-background-medium"
+      },
+      {
+        name: "CSS3",
+        icon: "/images/tools/css3.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "JavaScript",
+        icon: "/images/tools/js.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "MySQL",
+        icon: "/images/tools/mysql.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "mongoDB",
+        icon: "/images/tools/mongodb.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Bootstrap",
+        icon: "/images/tools/bootstrap.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Tailwind",
+        icon: "/images/tools/tailwind.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Figma",
+        icon: "/images/tools/figma.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "GitHub",
+        icon: "/images/tools/github.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "React",
+        icon: "/images/tools/react.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Android",
+        icon: "/images/tools/android.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Unity",
+        icon: "/images/tools/unity.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "VS Code",
+        icon: "/images/tools/vs.svg",
+        background: "neutral-background-medium"
+      }
+    ]
+  },
 };
 
 const blog = {
