@@ -85,6 +85,10 @@ const about = {
     display: true,
     link: "https://cal.com",
   },
+  cv: {
+    display: true,
+    link: "/files/Raditya_Wibowo_CV.pdf",
+  },
   intro: {
     display: true,
     title: "Introduction",
