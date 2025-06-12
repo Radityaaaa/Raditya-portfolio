@@ -334,18 +334,43 @@ export default function About() {
               >
                 {about.technical.title}
               </Heading>
+              
               <Column fillWidth gap="l" marginBottom="40">
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
-                    </Text>
+                  <Column key={`${skill.title}-${index}`} fillWidth gap="12">
+                    <Flex vertical="center" gap="8">
+                      <Icon
+                        name={skill.icon}    
+                        size="m"
+                        onBackground="accent-strong"
+                      />
+                      <Text
+                        variant="heading-strong-l"
+                        onBackground="neutral-strong"
+                      >
+                        {skill.title}
+                      </Text>
+                    </Flex>
+
+                    <Column as="ul" className={styles.threeRowList}>
+                        {skill.description.map((point, idx) => (
+                          <Text
+                            as="li"
+                            key={`desc-${skill.title}-${idx}`}
+                            variant="body-default-l"
+                            onBackground="neutral-medium"
+                          >
+                            {point}
+                          </Text>
+                        ))}
+                      </Column>
+
+                    {/* ─── Gambar (jika ada) ─── */}
                     {skill.images && skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
+                        {skill.images.map((image, imgIdx) => (
                           <Flex
-                            key={index}
+                            key={`img-${skill.title}-${imgIdx}`}
                             border="neutral-medium"
                             radius="m"
                             //@ts-ignore

@@ -26,6 +26,7 @@ import {
   HiMoon,
   HiSun,
   HiOutlineDocument,
+  HiOutlineDevicePhoneMobile,
 } from "react-icons/hi2";
 
 import {
@@ -37,6 +38,10 @@ import {
 } from "react-icons/pi";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaInstagram } from "react-icons/fa6";
+
+import { IoCode, IoGameControllerOutline, IoLogoHtml5 } from "react-icons/io5";
+
+import { CgWebsite } from "react-icons/cg";
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -74,6 +79,11 @@ export const iconLibrary: Record<string, IconType> = {
   moon: HiMoon,
   sun: HiSun,
   document: HiOutlineDocument,
+  code: IoCode,
+  mobile: HiOutlineDevicePhoneMobile,
+  game: IoGameControllerOutline,
+  web: CgWebsite,
+  html: IoLogoHtml5,
 };
 
 export type IconLibrary = typeof iconLibrary;
