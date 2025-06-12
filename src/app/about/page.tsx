@@ -191,8 +191,34 @@ export default function About() {
                           variant="secondary"
                         />
                       </React.Fragment>
-                    )
+                    ),
                 )}
+              </Flex>
+            )}
+            
+            {about.cv.display && (
+              <Flex
+                className={styles.blockAlign}
+                paddingTop="8"
+                gap="8"
+                horizontal="center"
+                fitWidth
+              >
+                <Button
+                  className="s-flex-hide"
+                  href={about.cv.link}
+                  prefixIcon="download"
+                  label="Download CV"
+                  size="s"
+                  variant="primary"
+                />
+                <IconButton
+                  className="s-flex-show"
+                  size="l"
+                  href={about.cv.link}
+                  icon="download"
+                  variant="primary"
+                />
               </Flex>
             )}
           </Column>
