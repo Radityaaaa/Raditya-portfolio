@@ -168,8 +168,36 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Python",
-        description: <>Able to create application and analyse data using python.</>,
+        title: "Programming Languages",
+        icon: "code",
+        description: [
+        <>Python</>,
+        <>Java</>,
+        <>Kotlin</>,
+      ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          // {
+          //   src: "/images/projects/project-01/cover-02.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/projects/project-01/cover-03.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
+      {
+        title: "Mobile Development",
+        icon: "mobile",
+        description: [
+        <>Android Studio</>,
+        <>XCode</>
+      ],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -187,8 +215,9 @@ const about = {
         ],
       },
       {
-        title: "Java",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Game Development",
+        icon: "game",
+        description: [<>Unity</>],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -206,27 +235,9 @@ const about = {
         ],
       },
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Web Development",
+        icon: "web",
+        description: [<>React</>,<>Bootstrap</>,<>Next.js</>,],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -246,7 +257,7 @@ const about = {
     items: [
       {
         name: "HTML5",
-        icon: "/images/tools/html5.svg", // You'll need to add these icons to your public folder
+        icon: "html", // You'll need to add these icons to your public folder
         background: "neutral-background-medium"
       },
       {
