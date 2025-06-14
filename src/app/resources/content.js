@@ -1,4 +1,4 @@
-import { Logo } from "@/once-ui/components";
+import { display } from "./config";
 
 const person = {
   firstName: "Raditya",
@@ -55,7 +55,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Where Thoughtful Design Meets Robust Code.</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Android Application</strong></>,
@@ -63,8 +63,21 @@ const home = {
   },
   subline: (
     <>
-      I'm Raditya, a full stack developer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm{' '} 
+      <span style={{ 
+        color: '#FFFFFF', 
+        fontWeight: 'bold' 
+      }}>
+        Raditya
+      </span>
+      ! by day, a full stack developer and a student of{' '}
+      <span style={{ 
+        color: '#FFFFFF', 
+        fontWeight: 'bold' 
+      }}>
+        Help University
+      </span>
+      , building seamless digital experiences. By night, I bring my own project ideas to life.
     </>
   ),
 };
@@ -164,7 +177,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
@@ -200,18 +213,18 @@ const about = {
       ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-02.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/projects/project-01/cover-03.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
@@ -220,18 +233,18 @@ const about = {
         description: [<>Unity</>],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-02.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/projects/project-01/cover-03.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
@@ -240,12 +253,12 @@ const about = {
         description: [<>React</>,<>Bootstrap</>,<>Next.js</>,],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-04.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
@@ -257,7 +270,7 @@ const about = {
     items: [
       {
         name: "HTML5",
-        icon: "html", // You'll need to add these icons to your public folder
+        icon: "images/tools/html5.svg",
         background: "neutral-background-medium"
       },
       {
@@ -319,7 +332,37 @@ const about = {
         name: "VS Code",
         icon: "/images/tools/vs.svg",
         background: "neutral-background-medium"
-      }
+      },
+      {
+        name: "Burp Suite",
+        icon: "/images/tools/burpsuite.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Eclipse",
+        icon: "/images/tools/eclipse.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Angular",
+        icon: "/images/tools/angular.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Cisco",
+        icon: "/images/tools/cisco.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "Xcode",
+        icon: "/images/tools/xcode.svg",
+        background: "neutral-background-medium"
+      },
+      {
+        name: "yEd",
+        icon: "/images/tools/yed.svg",
+        background: "neutral-background-medium"
+      },
     ]
   },
 };

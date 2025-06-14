@@ -37,7 +37,7 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaInstagram } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaX, FaInstagram, FaUnity } from "react-icons/fa6";
 
 import { IoCode, IoGameControllerOutline, IoLogoHtml5 } from "react-icons/io5";
 
@@ -83,7 +83,8 @@ export const iconLibrary: Record<string, IconType> = {
   mobile: HiOutlineDevicePhoneMobile,
   game: IoGameControllerOutline,
   web: CgWebsite,
-  html: IoLogoHtml5,
+  htmlLogo: IoLogoHtml5,
+  unity: FaUnity,
 };
 
 export type IconLibrary = typeof iconLibrary;
