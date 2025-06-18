@@ -54,7 +54,7 @@ export default function Home() {
               {home.subline}
             </Text>
           </RevealFx>
-          <RevealFx paddingTop="12" delay={0.4} horizontal="start" paddingLeft="12">
+          {/* <RevealFx paddingTop="12" delay={0.4} horizontal="start" paddingLeft="12">
             <Button
               id="about"
               data-border="rounded"
@@ -74,7 +74,7 @@ export default function Home() {
                 {about.title}
               </Flex>
             </Button>
-          </RevealFx>
+          </RevealFx> */}
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
