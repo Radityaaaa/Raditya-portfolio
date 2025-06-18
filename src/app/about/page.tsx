@@ -204,21 +204,31 @@ export default function About() {
                 horizontal="center"
                 fitWidth
               >
-                <Button
-                  className="s-flex-hide"
-                  href={about.cv.link}
-                  prefixIcon="download"
-                  label="Download CV"
-                  size="s"
-                  variant="primary"
-                />
-                <IconButton
-                  className="s-flex-show"
-                  size="l"
-                  href={about.cv.link}
-                  icon="download"
-                  variant="primary"
-                />
+                <a 
+                  href={about.cv.link} 
+                  download="Raditya Wibowo CV" 
+                  style={{ textDecoration: 'none' }} // Hapus garis bawah link
+                >
+                  <Button
+                    className="s-flex-hide"
+                    // Hapus href dan download dari sini jika memungkinkan
+                    prefixIcon="download"
+                    label="Download CV"
+                    size="s"
+                    variant="primary"
+                  />
+                </a>
+                <a 
+                  href={about.cv.link} 
+                  download="Raditya Wibowo CV"
+                >
+                  <IconButton
+                    className="s-flex-show"
+                    size="l"
+                    icon="download"
+                    variant="primary"
+                  />
+                </a>
               </Flex>
             )}
           </Column>
