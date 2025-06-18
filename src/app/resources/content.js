@@ -100,7 +100,7 @@ const about = {
   },
   cv: {
     display: true,
-    link: "/files/Raditya_Wibowo_CV.pdf",
+    link: "/resources/AgusRadityaWibowo.pdf",
   },
   intro: {
     display: true,
