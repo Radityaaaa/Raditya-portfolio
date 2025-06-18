@@ -4,7 +4,7 @@ const baseURL = "https://radityaa.vercel.app";
 const routes = {
   "/": true,
   "/about": true,
-  "/work": true,
+  "/work": false,
   "/blog": false,
   "/gallery": false,
 };
